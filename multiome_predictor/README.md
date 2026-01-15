@@ -69,5 +69,5 @@ python code_bkups/multiome_predictor/evaluate.py \
 - `train.py`: Training loop with early stopping and checkpointing.
 - `evaluate.py`: Evaluation script with metrics.
 - `data_prep.py`: Helpers for `.h5ad` extraction and LSI precomputation.
-- `synthetic.py`: Generate small synthetic sparse multiome dataset.
+- `synthetic.py`: Generate small synthetic sparse multiome dataset. Can scale to larger synthetic data
 
