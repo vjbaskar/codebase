@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import os
 from typing import Optional
+import sys
 
 import anndata as ad
 import numpy as np
@@ -18,7 +19,7 @@ def from_h5ad(
     outdir: Optional[str] = None,
 ):
     """Extract peaks and RNA matrices from an .h5ad file.
-
+    - Considers only h5ad. No support for mudata yet.
     - RNA is taken from .X by default (dense or sparse)
     - ATAC is taken from .obsm[atac_key] if present or .layers[atac_key]
     """
